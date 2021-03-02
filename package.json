@@ -1,0 +1,23 @@
+{
+  "name": "didact",
+  "version": "1.0.0",
+  "description": "Build your own React",
+  "source": "src/didact.js",
+  "main": "dist/didact.js",
+  "exports": "./dist/didact.morder.js",
+  "module": "dist/didact.module.js",
+  "unpkg": "dist/didact.umd.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.13.1",
+    "@babel/preset-env": "^7.13.5",
+    "@babel/preset-react": "^7.12.13",
+    "concurrently": "^6.0.0",
+    "microbundle": "^0.13.0",
+    "parcel-bundler": "^1.12.4"
+  },
+  "scripts": {
+    "build": "microbundle",
+    "start": "concurrently \"microbundle watch\" \"parcel example/index.html\""
+  }
+}
