@@ -18,6 +18,6 @@
   },
   "scripts": {
     "build": "microbundle",
-    "start": "concurrently \"microbundle watch\" \"parcel example/index.html\""
+    "start": "concurrently \"microbundle watch\" \"cd example && parcel index.html\""
   }
 }
